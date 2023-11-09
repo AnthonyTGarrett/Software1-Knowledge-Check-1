@@ -32,5 +32,6 @@ namespace KnowledgeCheck1_Calculator
 
             return (FirstOperand, SecondOperand);
         }
+
     }
 }
