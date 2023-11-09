@@ -1,4 +1,6 @@
-﻿namespace KnowledgeCheck1_Calculator
+﻿using System;
+
+namespace KnowledgeCheck1_Calculator
 {
     public class Calculator
     {
@@ -20,6 +22,15 @@
         public double Divide(double first, double second)
         {
             return first / second;
+        }
+
+        public (string, string) GetNumbersForOperation()
+        {
+            Console.WriteLine("Enter 2 integers for the operation");
+            var FirstOperand = Console.ReadLine();
+            var SecondOperand = Console.ReadLine();
+
+            return (FirstOperand, SecondOperand);
         }
     }
 }

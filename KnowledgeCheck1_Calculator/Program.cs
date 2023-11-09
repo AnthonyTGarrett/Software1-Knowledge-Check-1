@@ -15,9 +15,8 @@ namespace KnowledgeCheck1_Calculator
             switch (input)
             {
                 case "1":
-                    Console.WriteLine("Enter 2 integers to add");
-                    var addNumber1 = Console.ReadLine();
-                    var addNumber2 = Console.ReadLine();
+
+                    var (addNumber1, addNumber2) = calculator.GetNumbersForOperation();
 
                     if (int.TryParse(addNumber1, out int addNumOne) && int.TryParse(addNumber2, out int addNumTwo))
                     {
@@ -31,9 +30,8 @@ namespace KnowledgeCheck1_Calculator
                     break;
 
                 case "2":
-                    Console.WriteLine("Enter 2 integers to subtract");
-                    var subtractNumber1 = Console.ReadLine();
-                    var subtractNumber2 = Console.ReadLine();
+
+                    var (subtractNumber1, subtractNumber2) = calculator.GetNumbersForOperation();
 
                     if (int.TryParse(subtractNumber1, out int subNumOne) && int.TryParse(subtractNumber2, out int subNumTwo))
                     {
@@ -47,10 +45,8 @@ namespace KnowledgeCheck1_Calculator
                     break;
 
                 case "3":
-                    // Add code here
-                    Console.WriteLine("Enter 2 integers to multiply");
-                    var multiplyNumber1 = Console.ReadLine();
-                    var multiplyNumber2 = Console.ReadLine();
+
+                    var (multiplyNumber1, multiplyNumber2) = calculator.GetNumbersForOperation();
 
                     if (int.TryParse(multiplyNumber1, out int multiNumOne) && int.TryParse(multiplyNumber2, out int multiNumTwo))
                     {
@@ -64,9 +60,8 @@ namespace KnowledgeCheck1_Calculator
                     break;
 
                 case "4":
-                    Console.WriteLine("Enter 2 integers to divide");
-                    var divideNumber1 = Console.ReadLine();
-                    var divideNumber2 = Console.ReadLine();
+
+                    var (divideNumber1, divideNumber2) = calculator.GetNumbersForOperation();
 
                     if (double.TryParse(divideNumber1, out double divNumOne) && double.TryParse(divideNumber2, out double divNumTwo))
                     {
