@@ -24,7 +24,7 @@ namespace KnowledgeCheck1_Calculator
             return first / second;
         }
 
-        public (string, string) GetNumbersForOperation()
+        public (string, string) GetOperands()
         {
             Console.WriteLine("Enter 2 integers for the operation");
             var FirstOperand = Console.ReadLine();

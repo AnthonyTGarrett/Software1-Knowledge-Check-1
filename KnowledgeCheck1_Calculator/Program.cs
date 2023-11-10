@@ -16,7 +16,7 @@ namespace KnowledgeCheck1_Calculator
             {
                 case "1":
 
-                    var (addNumber1, addNumber2) = calculator.GetNumbersForOperation();
+                    var (addNumber1, addNumber2) = calculator.GetOperands();
 
                     if (int.TryParse(addNumber1, out int addNumOne) && int.TryParse(addNumber2, out int addNumTwo))
                     {
@@ -31,7 +31,7 @@ namespace KnowledgeCheck1_Calculator
 
                 case "2":
 
-                    var (subtractNumber1, subtractNumber2) = calculator.GetNumbersForOperation();
+                    var (subtractNumber1, subtractNumber2) = calculator.GetOperands();
 
                     if (int.TryParse(subtractNumber1, out int subNumOne) && int.TryParse(subtractNumber2, out int subNumTwo))
                     {
@@ -46,7 +46,7 @@ namespace KnowledgeCheck1_Calculator
 
                 case "3":
 
-                    var (multiplyNumber1, multiplyNumber2) = calculator.GetNumbersForOperation();
+                    var (multiplyNumber1, multiplyNumber2) = calculator.GetOperands();
 
                     if (int.TryParse(multiplyNumber1, out int multiNumOne) && int.TryParse(multiplyNumber2, out int multiNumTwo))
                     {
@@ -61,7 +61,7 @@ namespace KnowledgeCheck1_Calculator
 
                 case "4":
 
-                    var (divideNumber1, divideNumber2) = calculator.GetNumbersForOperation();
+                    var (divideNumber1, divideNumber2) = calculator.GetOperands();
 
                     if (double.TryParse(divideNumber1, out double divNumOne) && double.TryParse(divideNumber2, out double divNumTwo))
                     {
